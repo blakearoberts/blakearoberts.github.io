@@ -10,23 +10,61 @@
     <link rel=stylesheet type=text/css href="/static/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark sticky-top">
-      <div class="container">
-        <ul class="nav">
-          <a class="navbar-brand" href="/">Blake's Portfolio</a>
-        </ul>
-      </div>
-    </nav>
-    
-<div class="container mt-3">
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Projects</h5>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class='container'>
+
+        <a class="navbar-brand" href="/">Blake's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+            </ul>
         </div>
+
+    </div>
+</nav>
+    
+<div class='container mt-3'>
+    <div class='row'>
+        
+        <div class='col-4'>
+            <div class='card'>
+    <div class='card-body'>
+        <h5 class='card-title'>Harbinger</h5>
+        <p class='card-text'>Harbinger is a proof of concept messaging application utilizing an integration of Spine.js and Google Firebase. Spine.js is a MVC SPA web framework written in CoffeeScript. CoffeeScript is transpiled to JavaScript. Spine.js utilizes an NPM tool called Hem to build static, stateless resources. Spine.js works out of the box with a browser cache data store. It is also readily able to integrate via ajax and a back end REST API. Harbinger utilizes an integration between Spine.js and Firebase which replaces the ajax functionality within Spine.js with a JS Firebase client to accomplish data persistance.
+</p>
+        <a href='https://github.com/blakearoberts/Harbinger' class='btn btn-sm btn-primary'>Check it out!</a>
+    </div>
+</div>
+        </div>
+        
+        <div class='col-4'>
+            <div class='card'>
+    <div class='card-body'>
+        <h5 class='card-title'>NYMB</h5>
+        <p class='card-text'>Not Your Mother's Bank (NYMB) is a web app which works as a bank for multiple cryptocurrencies. The application integrates with a user's CoinBase account to offer an easy-to-use interface allowing the purchase, exchange, and selling of various cryptocurrencies. The system is comprised of a back end REST API, written in Go utilizing the Gin-Gonic framework, and a front end written in CoffeeScript utilizing the Spine.js framework.
+</p>
+        <a href='https://git.linux.iastate.edu/309Fall2017/YT_B_6_NYMB' class='btn btn-sm btn-primary'>Check it out!</a>
+    </div>
+</div>
+        </div>
+        
+        <div class='col-4'>
+            <div class='card'>
+    <div class='card-body'>
+        <h5 class='card-title'>Spot Finder</h5>
+        <p class='card-text'>Spot Finder is a parking assistance app for Android. I worked on the server, a REST API build with Java Spring. The application connected to a relational database (MySQL) housing information on parking spots. The back end stateless server completed REST-ful API calls to requests such as check in and checkout. Additionally, the back end served admin users as a tool to setup new parking lots. When an admin registered a new spot, a QR-code was generated and associated with that spot. The QR-code was an encoded REST request to toggle the availability of the spot. In other words, an application user would take a picture of the QR-code posted at their spot to toggle the spot's availability.
+</p>
+        <a href='https://git.ece.iastate.edu/SE329_Spring2018_Projects/UpperManagement/SpotFinderServer' class='btn btn-sm btn-primary'>Check it out!</a>
+    </div>
+</div>
+        </div>
+        
     </div>
 </div>
 

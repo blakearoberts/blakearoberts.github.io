@@ -1,0 +1,36 @@
+- name: Harbinger
+  description: >
+    Harbinger is a proof of concept messaging application utilizing an
+    integration of Spine.js and Google Firebase. Spine.js is a MVC SPA web
+    framework written in CoffeeScript. CoffeeScript is transpiled to
+    JavaScript. Spine.js utilizes an NPM tool called Hem to build static,
+    stateless resources. Spine.js works out of the box with a browser cache
+    data store. It is also readily able to integrate via ajax and a back end
+    REST API. Harbinger utilizes an integration between Spine.js and Firebase
+    which replaces the ajax functionality within Spine.js with a JS Firebase
+    client to accomplish data persistance.
+  repo: https://github.com/blakearoberts/Harbinger
+
+- name: NYMB
+  description: >
+    Not Your Mother's Bank (NYMB) is a web app which works as a bank for
+    multiple cryptocurrencies. The application integrates with a user's
+    CoinBase account to offer an easy-to-use interface allowing the purchase,
+    exchange, and selling of various cryptocurrencies. The system is comprised
+    of a back end REST API, written in Go utilizing the Gin-Gonic framework,
+    and a front end written in CoffeeScript utilizing the Spine.js framework.
+  repo: https://git.linux.iastate.edu/309Fall2017/YT_B_6_NYMB
+
+- name: Spot Finder
+  description: >
+    Spot Finder is a parking assistance app for Android. I worked on the
+    server, a REST API build with Java Spring. The application connected to a
+    relational database (MySQL) housing information on parking spots. The back
+    end stateless server completed REST-ful API calls to requests such as
+    check in and checkout. Additionally, the back end served admin users as a
+    tool to setup new parking lots. When an admin registered a new spot, a
+    QR-code was generated and associated with that spot. The QR-code was an
+    encoded REST request to toggle the availability of the spot. In other
+    words, an application user would take a picture of the QR-code posted at
+    their spot to toggle the spot's availability.
+  repo: https://git.ece.iastate.edu/SE329_Spring2018_Projects/UpperManagement/SpotFinderServer

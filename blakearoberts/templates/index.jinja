@@ -1,15 +1,13 @@
 {% extends 'base.jinja' %}
-{% block title %}Blake's Portfolio{% endblock %}
-{% block content %}
-<div class="container mt-3">
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Projects</h5>
-                </div>
-            </div>
+{% block page_title %}Blake's Portfolio{% endblock %}
+{% block body %}
+<div class='container mt-3'>
+    <div class='row'>
+        {% for project in projects %}
+        <div class='col-4'>
+            {% include 'project.jinja' %}
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
