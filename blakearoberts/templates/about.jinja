@@ -1,0 +1,26 @@
+<div class='col-12'>
+    <div class='card'>
+        <div class='card-body bg-light'>
+            <div class='row d-flex'>
+                <div class='col-4'>
+                    <div class='card p-2'>
+                        <img class='card-img-top' src='{{ about.image }}'>
+                    </div>
+                </div>
+                <div class='col-8 align-self-stretch'>
+                    <div class='card p-2'>
+                        <h4 class='card-title'>{{ about.title }}</h4>
+                        <p class='card-text'>{{ about.description }}</p>
+                        <h5 class='card-title mt-2'>Contact Me</h5>
+                        <dl class='row mb-0'>
+                            {% for key, value in about.contact.items() %}
+                            <dt class='col-3 text-right'>{{ key }}</dt>
+                            <dd class='col-9'>{{ value }}</dd>
+                            {% endfor %}
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
