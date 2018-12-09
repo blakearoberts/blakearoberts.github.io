@@ -1,0 +1,15 @@
+{% extends 'base.jinja' %}
+{% block page_title %}Blake's Work Experience{% endblock %}
+{% block body %}
+<div class='row mt-3'>
+    <div class='col-12'>
+        <span class='display-4'>Work Experience</span>
+        <hr class='mt-0' />
+    </div>
+    {% for experience in work_experience %}
+    <div class='col-6'>
+        {% include 'experience.jinja' %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

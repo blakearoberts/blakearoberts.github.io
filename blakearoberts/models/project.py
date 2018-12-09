@@ -16,6 +16,7 @@ class Project(object):
         self.description = description
         self.repo = repo
 
+    @staticmethod
     def load_all(yaml_file):
         projects = []
         with open(yaml_file, 'r') as file:

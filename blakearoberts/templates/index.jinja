@@ -1,16 +1,29 @@
 {% extends 'base.jinja' %}
 {% block page_title %}Blake's Portfolio{% endblock %}
 {% block body %}
-<div class='container'>
-    <div class='row mt-3'>
-        {% include 'about.jinja' %}
+<div class='row mt-3 mb-3'>
+    {% include 'about.jinja' %}
+</div>
+<div class='row mb-3'>
+    <div class='col-12'>
+        <span class='display-4'>Work Experience</span>
+        <hr class='mt-0' />
     </div>
-    <div class='row mt-3'>
-        {% for project in projects %}
-        <div class='col-4'>
-            {% include 'project.jinja' %}
-        </div>
-        {% endfor %}
+    {% for experience in work_experience %}
+    <div class='col-6'>
+        {% include 'experience.jinja' %}
     </div>
+    {% endfor %}
+</div>
+<div class='row mb-3'>
+    <div class='col-12'>
+        <span class='display-4'>Personal Projects</span>
+        <hr class='mt-0' />
+    </div>
+    {% for project in projects %}
+    <div class='col-4'>
+        {% include 'project.jinja' %}
+    </div>
+    {% endfor %}
 </div>
 {% endblock %}

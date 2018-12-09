@@ -18,6 +18,7 @@ class About(object):
         self.description = description
         self.contact = contact
 
+    @staticmethod
     def load(yaml_file):
         about = None
         with open(yaml_file, 'r') as file:

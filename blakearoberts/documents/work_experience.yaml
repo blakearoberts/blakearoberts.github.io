@@ -1,0 +1,27 @@
+- name: Workiva
+  location: Ames, Iowa
+  start_date: May 2017
+  end_date: current
+  description: >
+    Workiva is an enterprise software company. Their main product is wDesk. As
+    a infrastructure software engineer, I started working after my second year
+    at Iowa State University. At Workiva I worked on messaging systems such as
+    NATS as well as Amazon MQ (AWS ActiveMQ). Additionally, I worked on
+    application intelligence systems and standards accomplishing system wide
+    logging and application metric reporting. My work has given me experience
+    writing multilanguage SDK's (Go, Python (2 and 3), Java, and Dart).
+    Additionally, I gained experience working with AWS systems (namely Kinesis,
+    Lambda, and EKS).
+
+- name: Global Vet Link
+  location: Ames, Iowa
+  start_date: May 2016
+  end_date: May 2017
+  description: >
+    Global Vet Link (GVL) provides a single page web application allowing
+    veterinarians, animal owners, and pharmaceutical companies to move their
+    animal documents (such as a VFD or Veterinary Food Directive) to the cloud.
+    I started full stack development at GVL after my first year at Iowa State
+    University. I helped create database backup and restore admin features on
+    their Groovy on Grails system. I also developed several intuitive UX
+    features on their frontend CoffeeScript MVC framework, Spine.js.
